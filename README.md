@@ -4,10 +4,10 @@ abstractsocket
 abstract unix sockets support for net.createConnection
 
     var net = require('net');
-    require('abstractsocket)(net);
+    require('abstractsocket')(net);
     var connection = net.createConnection('\u0000/tmp/dbus-OeixI07RHo');
     connection.pipe(process.stdout);
-    connection.write(Buffer('\0AUTH EXTERNAL 31303030\r\n');
+    connection.write(Buffer('\0AUTH EXTERNAL 31303030\r\n'));
 
 you can map `net.createConnection` to any command:
 
