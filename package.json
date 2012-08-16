@@ -2,7 +2,7 @@
 , "author": "Andrey Sidorov <sidorares@yandex.ru>"
 , "description": "Abstract unix sockets support by spawning socat process"
 , "keywords": ["child", "spawn", "stream", "abstract sockets"]
-, "homepage": "https://github.com/sidorares/exec-stream"
+, "homepage": "https://github.com/sidorares/abstractsocket"
 , "version" : "0.0.1"
 , "maintainers" :
   [ { "name": "Andrey Sidorov"
