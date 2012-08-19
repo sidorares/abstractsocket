@@ -3,7 +3,7 @@
 , "description": "Abstract unix sockets support by spawning socat process"
 , "keywords": ["child", "spawn", "stream", "abstract sockets"]
 , "homepage": "https://github.com/sidorares/abstractsocket"
-, "version" : "0.0.1"
+, "version" : "0.0.2"
 , "maintainers" :
   [ { "name": "Andrey Sidorov"
     , "email": "sidoares@yandex.ru"
