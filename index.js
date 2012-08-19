@@ -24,7 +24,10 @@ module.exports = function(net, options) {
        // TODO more generic 'getStream'
        var command = options.getSpawnArguments.apply(this, args);
        if (command) {
-           return execStream.apply(null, command);
+           var stream = execStream.apply(null, command);
+           // stub functions expected from net stream
+           stream.setNoDelay = function() {};
+           return stream;
        } else {
            return oldCreateConnection.apply(this, args);
        }
