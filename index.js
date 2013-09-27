@@ -25,6 +25,9 @@ module.exports = function(net, options) {
        var command = options.getSpawnArguments.apply(this, args);
        if (command) {
            var stream = execStream.apply(null, command);
+           var connectionListener = args[1];
+           if (connectionListener)
+               stream.on("connect", connectionListener);
            // stub functions expected from net stream
            stream.setNoDelay = function() {};
            return stream;
