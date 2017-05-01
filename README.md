@@ -1,6 +1,8 @@
 abstractsocket
 ==============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sidorares/abstractsocket.svg)](https://greenkeeper.io/)
+
 abstract unix sockets support for net.createConnection
 
     var net = require('net');
